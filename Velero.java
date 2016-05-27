@@ -29,8 +29,6 @@ public class Velero extends Barco
      * Devuelve la informacion del velero. 
      */
     public String toString(){
-        String info;
-        info = super.toString() + "\nNum Mastiles: " + numeroMastiles;
-        return info;
+        return super.toString() + "\nNum Mastiles: " + numeroMastiles;
     }
 }
