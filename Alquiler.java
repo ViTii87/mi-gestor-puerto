@@ -26,7 +26,7 @@ public class Alquiler
     /**
      * Devuelve el coste del alquiler del amarre
      */
-    private float getCosteAlquiler(){
+    public float getCosteAlquiler(){
         return numeroDias*(barco.getEslora()*MULTIPLICADOR_ESLORA) + (VALOR_FIJO_ALQUILER * barco.getCoeficienteBernua());
     }
     
@@ -37,7 +37,6 @@ public class Alquiler
         return "\n---------------------------" +
                "\n----- DATOS  ALQUILER -----" +
                "\n---------------------------" + 
-               "\n\n" +
                cliente + barco + "\nCoste Alquiler: " + getCosteAlquiler();
                
     }

@@ -49,7 +49,7 @@ public abstract class Barco
      * Devuelve los datos del barco
      */
     public String toString(){
-        return "\n**************************" +
+        return "\n\n**************************" +
                "\n*******DATOS  BARCO*******" +
                "\n**************************" + 
                "\nMatricula: " + matricula +
