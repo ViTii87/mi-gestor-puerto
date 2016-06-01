@@ -7,6 +7,7 @@
  */
 public class Alquiler
 {
+    private int posicion;
     private int numeroDias;
     private Cliente cliente;
     private Barco barco;
@@ -28,6 +29,20 @@ public class Alquiler
      */
     public float getCosteAlquiler(){
         return numeroDias*(barco.getEslora()*MULTIPLICADOR_ESLORA) + (VALOR_FIJO_ALQUILER * barco.getCoeficienteBernua());
+    }
+    
+    /**
+     * Devuelve la posicion del amarre
+     */
+    public int getPosicion(){
+        return posicion;
+    }
+    
+    /**
+     * Metodo para fijar la posicion del puerto
+     */
+    public void setPosicion(int posicion){
+        this.posicion = posicion;
     }
     
     /**
