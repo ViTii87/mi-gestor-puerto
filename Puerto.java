@@ -76,6 +76,8 @@ public class Puerto
                 noAlquiler = true;
             }
         }
+        System.out.println("");
+        System.out.println("Amarres libres: " + (NUMERO_AMARRES-alquileres.size()));
         if(!noAlquiler)
             System.out.println("No se han realizado alquileres.");
     }
@@ -91,7 +93,7 @@ public class Puerto
             while(i < alquileres.size() && !encontrado){
                 if(alquileres.get(i).getPosicion() == posicion){
                     importe = alquileres.get(i).getCosteAlquiler();
-                    alquileres.remove(alquileres.get(i));
+                    alquileres.remove(i);
                 }
                 i++;
             }
